@@ -4,7 +4,7 @@ Last update: 2026-11-27
 
 ## Current phase
 
-Phase 1 - Project Bootstrap
+Phase 3 - Infrastructure Foundation
 
 ## Team
 
@@ -33,14 +33,18 @@ Assignments are provisional.
 
 - [x] Repository documentation.
 - [x] Project-specific gitignore.
-- [ ] Bootstrap Pull Request.
+- [x] Bootstrap Pull Request.
 
 ## Next tasks
 
-- [ ] Install AWS CLI.
-- [ ] Install Terraform.
-- [ ] Configure AWS authentication.
-- [ ] Implement Terraform foundation.
+- [x] Install AWS CLI.
+- [x] Install Terraform.
+- [x] Configure AWS authentication.
+- [x] Implement initial Terraform foundation.
+- [ ] Refactor Terraform into academic modules.
+- [ ] Configure Landing Crawler.
+- [ ] Configure AWS Budgets alerts.
+- [ ] Deploy Terraform foundation.
 - [ ] Implement historical ingestion.
 - [ ] Implement Bronze processing.
 - [ ] Build dashboard prototype.
@@ -71,12 +75,16 @@ Assignments are provisional.
 
 ## Pending decisions
 
-- Academic approval of AWS us-east-2.
+- AWS deployment region selected: us-east-1.
+- Existing Neon OLTP region: us-east-2.
+- Verify Neon regional requirements.
 - AWS Glue runtime verification.
 - Incremental update semantics.
 - Final dimensional model.
 - Final frontend stack.
-- Infrastructure cost estimation.
+- Preliminary infrastructure budget: USD 12.31.
+- Verify estimates in AWS Pricing Calculator.
+- Define Terraform state management.
 
 ## Validation evidence
 
@@ -84,7 +92,17 @@ Assignments are provisional.
 - Ruff lint: passed.
 - Ruff format: passed.
 - Pytest: 1 passed.
+- AWS CLI: 2.42.5.
+- Terraform: 1.17.2.
+- Java: 17.
+- PostgreSQL client: 18.6.
+- AWS authentication: passed.
+- Terraform format: passed.
+- Terraform validate: passed.
+- Terraform plan: 22 to add, 0 to change, 0 to destroy.
+- AWS deployment region: us-east-1.
+- AWS resources deployed: 0.
 
 ## Next step
 
-Complete and merge the project bootstrap.
+Refactor the validated Terraform foundation into modules and prepare the first deployment.

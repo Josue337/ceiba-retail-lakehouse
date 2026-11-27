@@ -81,9 +81,10 @@ Do not process lote_03 before the final demonstration.
 
 ## Infrastructure
 
-Proposed AWS region: us-east-2.
+AWS deployment region: us-east-1.
 
-Academic approval of the region remains pending.
+Follow the academic architecture and cost requirements.
+The existing Neon OLTP remains in us-east-2 until its regional requirements are resolved.
 
 Maximum project budget: 20 USD.
 
